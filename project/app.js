@@ -22,13 +22,13 @@ const sidebarOverlay = document.getElementById("sidebar-overlay");
 if (mobileManuBtn && closeMobileMenuBtn && mobileSidebar && sidebarOverlay) {
   // open sidebar
   mobileManuBtn.addEventListener("click", () => {
-    mobileSidebar.classList.remove("-transition-x-full");
+    mobileSidebar.classList.remove("-translate-x-full");
     sidebarOverlay.classList.remove("hidden");
   });
 
   // close-sidebar
   const closeMenu = () => {
-    mobileSidebar.classList.add("-transition-x-full");
+    mobileSidebar.classList.add("-translate-x-full");
     sidebarOverlay.classList.add("hidden");
   };
 
