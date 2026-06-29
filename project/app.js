@@ -552,6 +552,7 @@ function performLocalSearch() {
   });
 
   renderVoterTable(filtered);
+  updateStatus(filtered);
 }
 
 // login dashbord utilities
@@ -598,7 +599,7 @@ function showEditError(message) {
   }
 }
 
-function updateStatus() {
+function updateStatus(voterList = allVoters) {
   const totalVoterCount = document.getElementById("total-voter-count");
   const totalProvinCount = document.getElementById("total-provin-count");
   if (totalVoterCount) {
